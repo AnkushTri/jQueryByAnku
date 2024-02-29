@@ -5,48 +5,48 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            // $("#btn1").click(function () {
-            //     $("#test1").text("Hello world!");
-            // });
-            // $("#btn2").click(function () {
-            //     $("#test2").html("<b>Hello world!</b>");
-            // });
-            // $("#btn3").click(function () {
-            //     $("#test4").text($("#test3").val());
-            // });
+            $("#btn1").click(function () {
+                $("#test1").text("Hello world!");
+            });
+            $("#btn2").click(function () {
+                $("#test2").html("<b>Hello world!</b>");
+            });
+            $("#btn3").click(function () {
+                $("#test4").text($("#test3").val());
+            });
 
             ////get request 
-            // $("button").click(function () {
-            //     $.get("anku.txt", function (data, status) {
-            //         alert("Data: " + data + "\nStatus: " + status);
-            //     });
-            // });
+            $("button").click(function () {
+                $.get("anku.txt", function (data, status) {
+                    alert("Data: " + data + "\nStatus: " + status);
+                });
+            });
 
             ////post request
-            // $("button").click(function(){
-            //     $.post("anku.txt",{
-            //         name:"anku",
-            //         greet:"welcome",
-            //     },function(data,status){
-            //         alert("Data: "+ data + "Status: " +  status)
-            //     })
-            // })
+            $("button").click(function(){
+                $.post("anku.txt",{
+                    name:"anku",
+                    greet:"welcome",
+                },function(data,status){
+                    alert("Data: "+ data + "Status: " +  status)
+                })
+            })
 
             //load
-            // $("button").click(function(){
-            //     $("#load").load("anku.txt");
-            // })
-            // $("button").click(function () {
-            //     $("#load").load("anku.txt",
-            //         function (response, status, xhr) {
-            //             if (status == "success")
-            //                 alert("Hello content loaded successfully!");
-            //             alert(response)
-            //             if (status == "error")
-            //                 alert("Error: " + xhr.status + ": " + xhr.status);
+            $("button").click(function(){
+                $("#load").load("anku.txt");
+            })
+            $("button").click(function () {
+                $("#load").load("anku.txt",
+                    function (response, status, xhr) {
+                        if (status == "success")
+                            alert("Hello content loaded successfully!");
+                        alert(response)
+                        if (status == "error")
+                            alert("Error: " + xhr.status + ": " + xhr.status);
 
-            //         });
-            // })
+                    });
+            })
 
 
         });
@@ -54,7 +54,7 @@
 </head>
 
 <body>
-
+    
     <div id="load">Loading...</div>
     <button>getdata</button>
 

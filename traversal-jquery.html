@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+           $( "button" ).click(function() {
+
+            ////Ancesters---> parent()-direct parent, parents()-all parents,parentsUntil(),parents("element") --til
+            $("span").parent().css("color","red");
+            $("span").parents("ol").css("color","red");
+            $("span").parentsUntil("div").css("color","red");
+
+            ////Desenders---->children() method returns all direct children of the selected element.
+            //find() method returns descendant elements of the selected element, all the way down to the last descendant.
+                $(".traversal").children().css("color","green")
+                $("div").find("li").css("color","green")
+                $("div").children("li.first").css("color","green")
+
+           ////Siblings---->>> siblings(selector) Returns a set of elements that are siblings to each element in the set
+            $("#li1").siblings("li").css("color","blue");
+
+            //filtering
+            /////first(), last(), eq(index), filter() and not() 
+            $("li").first().css( "border", "2px solid red" );
+            $("li").last().css( "border", "2px solid red" );
+            $("li").eq(2).css( "border", "2px solid grey" );
+            $("li").filter("#li1").css( "border", "2px solid green" );
+            
+
+             }); 
+        });
+    </script>
+</head>
+<body>
+    <div class="traversal">
+        <p>heloo boy</p>
+        <ol>
+            <p>hlo</p>
+            <li>hiii welcome</li>
+            <li id="li1">anku <b>raj</b></li>
+            <li >ankushrajkiu <span>mankunlkejfeli <b>heloo</b></span> <b>hoe</b></li>
+            <button>Click me!</button>
+        </ol>
+    </div>
+</body>
+
+</html>

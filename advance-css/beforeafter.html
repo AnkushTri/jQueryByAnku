@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color: rgb(250, 245, 245);
+        }
+        body{
+            background-color: aqua;
+        }
+        .anku{
+            color:  var(--color);
+            font-size: 1.5rem;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            padding: 10px;
+        }
+        .anku::before{
+            content: "";
+            width:90%;
+            position: absolute;
+            border-top: 5px solid black;
+            top: 5%;
+            left: 10%;
+        }
+        .anku::after{
+content: "";
+            display: block;
+            width:90%;
+            border-radius: 2px;
+            position: absolute;
+            border-top: 5px solid black;
+            bottom: 0%;
+            left: 10%;
+        }
+        .raj::after{
+            content: "";
+            position: absolute;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="anku">
+        anku raj kumar
+    </div>
+    <div class="raj">
+        anku kumar
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 5rem 20rem;
+            background-color: rgb(249, 215, 222);
+        }
+
+        .card {
+            width: 300px;
+            height: 250px;
+            padding: 10px 22px;
+            background: #fff;
+            position: relative;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgb(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .face {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+        }
+
+        .face1 {
+            margin: 2rem 0;
+            padding: 10px 12px;
+            transition: 0.3s;
+        }
+
+        .face1>h2 {
+            text-transform: capitalize;
+            margin: 5px 0;
+        }
+
+        .face1 a {
+            text-decoration: none;
+            border: 1px solid grey;
+            padding: 2px 6px;
+            border-radius: 5px;
+            margin: 15px 0;
+            color: black;
+        }
+
+        .face2 {
+            width: 60px;
+            text-align: center;
+            background-color: rgb(116, 186, 202);
+            border-radius: 50%;
+            color: rgb(99, 97, 94);
+            position: absolute;
+            top: 10px;
+            left: 37%;
+            transition: 0.3s;
+        }
+
+        .face2:hover {
+            width: 100%;
+            height: 100%;
+            background-color: aqua;
+            border-radius: 0;
+            top: 0;
+            left: 0;
+        }
+
+        .card:hover .face2 h2 {
+            width: 60px;
+            text-align: center;
+            background-color: rgb(116, 186, 202);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="face face1">
+            <h2>anku raj</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti nisi facilis incidunt laboriosam
+                provident ratione facere atque soluta nam?</p>
+            <a href="facebook.com" target="_blank">Read More >></a>
+        </div>
+        <div class="face face2">
+            <h2>001</h2>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #272727;
+        }
+        a{
+            text-decoration: none;
+            border: 1px solid green;
+            color: green;
+            padding: 12px 15px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .wave{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(47, 112, 47);
+            top: calc(100%+22px);
+            left: 0;
+            transition: all .3s ease;
+            z-index: -1;
+        }
+        .wave::before{
+            content: "";
+            position:absolute;
+            width: 100%;
+            height: 22px;
+            top: -22px;
+            background: url('wav.avif');
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+            animation: anku 1s linear infinite; 
+        }
+        @keyframes anku{
+            0%{
+                background-position-x:0%;
+            }100%{
+                background-position-x:100%;
+            }
+        }
+        a:hover .wave{
+            top:0;
+        }
+        a:hover{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <a href="anu.com" target="_blank">
+        ankush raj
+        <div class="wave"></div>
+    </a>
+   
+</body>
+</html>

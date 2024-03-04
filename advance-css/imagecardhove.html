@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { 
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+             margin: 10rem 20rem;
+             background-color: rgb(203, 236, 244);
+        }
+        .card{
+            margin-top: 8rem;
+            width: 200px;
+            height: 120px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: #fffefe;
+            position: relative;
+            box-shadow: 0px 2px 20px rgb(0,0,0,0.5);
+            
+        }
+        .img{
+            position: relative;
+            z-index: 999;
+
+        }
+        img{
+            width: 100%;
+            border-radius: 10px;
+             transform: translateY(-40px);
+            box-shadow: 0px 2px 5px rgb(0,0,0,0.5);
+
+        }
+        .content{
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 14px;
+            overflow: hidden;
+            position: absolute;
+            transform: translateY(-160px);
+            /* opacity: 4; */
+
+        }
+        .card:hover{
+            transition: all 0.5s ease-in-out;
+            height:  220px;
+        }
+
+        .card:hover .content{
+            transform: translateY(-40px);
+            transition: 0.2s;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="img">
+            <img src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=600" alt="px">
+        </div>
+    <div class="content">
+        <h2>Anku raj</h2>
+        <p>Lorem ipsum dolor sit amet. lorme9
+            ipsum dolor sit amet consectetur adipisicing elit. Quasi, qu
+        </p>
+    </div>
+    </div>
+</body>
+</html>

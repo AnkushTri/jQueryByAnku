@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overlay {
+            width: 300px;
+            height: 200px;
+        }
+
+        img {
+            width: 90%;
+            aspect-ratio: 1.8;
+
+        }
+
+        .imag {
+            width: 100%;
+            height: 100%;
+            border: 2px solid red;
+            background-image: linear-gradient(120deg, rgb(256, 256, 256, 0.7) 50%, transparent 50%), url("wav.avif");
+        }
+
+        @media screen and (max-width:600px) {
+            body{
+                display: block;
+            }
+            .imag {
+                width: 90vw;
+                height: 90vh;
+                background-image: linear-gradient(120deg, rgb(256, 256, 256, 0.7) 50%, transparent 50%), url("wav.avif");
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="imag">
+            <!-- <img src="/advance-css/wav.avif" alt="ank"> -->
+        </div>
+    </div>
+</body>
+
+</html>

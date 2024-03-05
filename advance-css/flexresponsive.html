@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .app{
+            display: flex;
+        }
+        .slidebar{
+            width: 20%;
+            background-color: rgb(201, 196, 194);
+            height: 100vh;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 80%;
+            /* border: 2px solid grey; */
+            transition: all 0.3s;
+        }
+        .sec{
+            flex: 1 1 200px;
+            margin: 10px;
+            height: 200px;
+            background-color: #f5f5;
+            text-align: center;
+        }
+        @media screen and (max-width:600px){
+            .app{
+                flex-direction: column;
+            }
+            .slidebar{
+                width: 100% !important;
+                height: 300px;
+            }
+            .container{
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+    <div class="slidebar">
+        side
+    </div>
+    <div class="container">
+        <div class="sec">HELLLO</div>
+        <div class="sec">anku raj</div>
+        <div class="sec">welcome to my world</div>
+    </div>
+    </div>
+</body>
+</html>

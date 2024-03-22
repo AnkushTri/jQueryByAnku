@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gorditas&family=Metamorphous&display=swap" rel="stylesheet">
+    <style>
+        .center {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .debitcard {
+            background: linear-gradient(to right top, #52b6fe, #6154fe);
+            border-radius: 1rem;
+            width: 330px;
+            height: 200px;
+            padding: 1rem 3rem;
+            position: relative;
+        }
+
+        .debitcard::before {
+            content: "";
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            border-radius: 1rem;
+            clip-path: polygon(25% 2%, 99% 4%, 99% 60%, 75% 100%, 55% 67%, 60% 28%);
+            background: linear-gradient(90deg, rgba(0, 212, 255, 1) 15%, rgba(9, 9, 121, 1) 43%, rgba(28, 94, 190, 1) 69%, rgba(68, 66, 186, 1) 100%, rgba(2, 0, 36, 1) 100%);
+        }
+
+        .topside {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-family: "Metamorphous", serif;
+            position: relative;
+            z-index: 10;
+        }
+
+        .bottomside {
+            position: absolute;
+            bottom: 10px;
+            color: rgb(240, 241, 241);
+            z-index: 10;
+        }
+
+        .bottomside h2:first-child {
+            margin-bottom: -20px;
+        }
+        .debitcard:hover{
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            rotate: 45deg;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="debitcard .metamorphous-regular">
+            <div class="topside">
+                <h2>Credit</h2>
+                <h1>Visa</h1>
+            </div>
+            <div class="bottomside">
+                <h2>Ankush Kumar</h2>
+                <h2>1234 - 3456 - 9876 - 1476</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

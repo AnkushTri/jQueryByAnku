@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: #7fffd4;
+            width: 80%;
+            height: 90vh;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .piechart {
+             width: 300px;
+            height: 300px;
+            margin: 1rem auto;
+            padding: 2rem 0;
+            /* 1st way */
+            background: transparent, conic-gradient(from 180deg, red 0,
+                    red 35%,
+                    lime 0,
+                    lime 50%,
+                    aqua 0,
+                    aqua 60%,
+                    blue 0,
+                    blue 81%,
+                    yellow 0,
+                    yellow 100%);
+            border-radius: 50%;
+            
+            /* secon way */
+            background: radial-gradient(circle closest-side, transparent 100%, #7fffd4 0),
+                conic-gradient(from 180deg, red 0,
+                    red 35%,
+                    lime 0,
+                    lime 50%,
+                    aqua 0,
+                    aqua 60%,
+                    blue 0,
+                    blue 81%,
+                    yellow 0,
+                    yellow 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            The best sell of this month
+        </div>
+        <div class="piechart">
+
+        </div>
+        <div class="country">
+            <div class="title">Electricity</div>
+            <div class="title">Mobile</div>
+            <div class="title">Cooler</div>
+        </div>
+    </div>
+</body>
+
+</html>

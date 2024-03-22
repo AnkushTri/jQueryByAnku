@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    background-color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    padding: 1rem 2rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 6px 10px rgba(140, 135, 135, 0.7);
+    z-index: 2;
+}
+.title{
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: rgb(71, 67, 67);
+}
+ul{
+    display: flex;
+    gap:2rem;
+}
+
+ul li{
+    list-style: none;
+}
+ul li a{
+    padding: 2px 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+ul li a:hover{
+    color: rgb(106, 105, 105);
+
+}
+
+.hero{
+    width: 90%;
+    height: 85vh;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 3rem;
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+}
+
+.hero .imgtitle{
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    background-clip: text;
+    font-size: 1.5rem;
+    color: rgb(104, 207, 66);
+}
+
+
+
+footer{
+    width: 100%;
+    padding: 1.5rem 0;
+    text-align: center;
+    background-color: rgb(236, 234, 234);
+    box-shadow: 10px 10px 20px rgba(0, 0,0,0.7) ;
+}
+article{
+    width: 60%;
+    margin: 3rem auto;
+
+}
+
+.box{
+    display: flex;
+    gap:1rem;
+}
+.content{
+    flex: 1;;
+}
+.foodimg{
+    flex:1;
+    height: 25rem;
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px rgba(0, 0,0,0.5) ;
+}
+.foodimg img{
+    width: 100%;
+    height: 100%;
+}
+hr{
+    margin: 3rem 0;
+}
+.content {
+    padding: 1rem 0;
+}
+.content h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+.date{
+    text-align: center;
+    font-size: 1.2rem;
+    padding:2rem 0 1rem 0;
+}
+
+.info{
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+.extra-info{
+    font-size: 0.8rem;
+    color: grey;
+}
+.menu-info{
+    margin: 1.5rem 0;
+}
+.menu_info p{
+ font-size: 0.2rem;
+ color: grey;
+}
+ h2{
+ color: rgb(54, 53, 53);
+    white-space: 1rem;
+    letter-spacing: 0.2rem;
+   margin: 0.5rem 0;
+}
+
+.contact h1{
+    font-size: 1.5rem;
+    margin: 4rem 0 1rem 0;
+    letter-spacing: 2px;
+}
+
+.conatact-address{
+    margin: 1rem 0;
+    color: rgb(125, 125, 200);
+}
+input{
+    width: 100%;
+    margin:0.7rem 1rem;
+    padding:0.5rem 0.3rem;
+    border: none;
+    border-bottom: 1px solid grey;
+    font-size: 0.8rem;
+}
+
+button{
+    margin:0.7rem 1rem;
+    padding:8px 10px;
+    border: none;
+    background-color: green;
+    border-radius: 0.3rem;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+button:hover{
+    transform: translateY(-5px) translateX(5px);
+    scale: 1.1;
+    background-color: rgb(63, 193, 63);
+    box-shadow: 0 5px 5px rgb(119, 115, 115);
+}
+
+@media screen and (max-width:480px){
+    .box{
+        flex-direction: column;
+    }
+    html{
+        font-size: 60%;
+    }
+    ul{
+        gap:0.7rem;
+    }
+    h2,h3{
+        font-size: 0.8rem;
+    }
+}

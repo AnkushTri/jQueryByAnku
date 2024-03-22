@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"  id="search" value="" placeholder="Enter your Name">
+    <button id="btn">search</button>
+</body>
+<script>
+    let s=document.getElementById('search');
+    let button=document.getElementById("btn");
+    let url="https://github.com/";
+
+    button.addEventListener("click",async()=>{
+        url+=s.value;
+       window.open(url, "_blank");
+    })
+
+
+</script>
+</html>
